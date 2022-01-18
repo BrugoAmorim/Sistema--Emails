@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace backend.Models
 {
+
     public partial class dbemailsContext : DbContext
     {
         public dbemailsContext()

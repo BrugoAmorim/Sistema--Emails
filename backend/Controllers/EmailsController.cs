@@ -8,10 +8,11 @@ namespace backend.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class EmailsEnviadosController : ControllerBase
+    public class EmailsController : ControllerBase
     {
         Utils.EmailsEnviadoUtils converteremails = new Utils.EmailsEnviadoUtils();
 
+        // funcao para enviar um email
         [HttpPost("enviar-email")]
         public ActionResult<Models.Response.EscreverResponse> escreveremail(Models.Request.EscreverRequest req){
 
@@ -30,6 +31,7 @@ namespace backend.Controllers
             }
         }
     
+        // funcao para ver os emails enviados, entra o id do usuario e retorna uma lista
         [HttpGet("emails-enviados/{idusuario}")]
         public ActionResult<List<Models.Response.EscreverResponse>> buscarmeusemails(int idusuario){
 
@@ -48,6 +50,7 @@ namespace backend.Controllers
             }
         }
 
+        // funcao para buscar os email recebidos, entra o id do usuario e retorna uma lista com os emails
         [HttpGet("emails-recebidos/{idusuario}")]
         public ActionResult<List<Models.Response.EmailsRecebidosResponse>> emailsparamim(int idusuario){
 
@@ -64,6 +67,42 @@ namespace backend.Controllers
             {
                 return new BadRequestObjectResult(
                     new Models.ErroResponse(ex.Message, 400)
+                );
+            }
+        }
+
+        // funcao para deletar um email expecifico
+        [HttpDelete("apagar-email/{idemail}")]
+        public ActionResult<string> apagandoemails(int idemail){
+
+            try{
+                Business.DeletarEmailBusiness validar = new Business.DeletarEmailBusiness();
+                validar.validardelete(idemail);
+                return "O email foi deletado";
+            }
+            catch(System.Exception ex){
+                return new BadRequestObjectResult(
+                    new Models.ErroResponse(ex.Message, 404)
+                );
+            }
+        }
+
+        // funcao para marcar o email como lido ou desmarcar
+        [HttpPut("marcar-lido/{idemail}/{lido}")]
+        public ActionResult<Models.Response.EmailsRecebidosResponse> marcarcomolido(int idemail, int lido){
+
+            try{
+                Business.EmailBusiness validarleitura = new Business.EmailBusiness();
+
+                Models.TbEmailRecebido email = validarleitura.leremail(idemail,lido);
+                Models.Response.EmailsRecebidosResponse res = converteremails.tbemailPres(email);
+
+                return res;
+            }
+            catch(System.Exception ex){
+
+                return new BadRequestObjectResult(
+                    new Models.ErroResponse(ex.Message, 404)
                 );
             }
         }

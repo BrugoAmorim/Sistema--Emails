@@ -98,5 +98,20 @@ namespace backend.Utils
             
             return lst;
         }
+
+        public Models.Response.EmailsRecebidosResponse tbemailPres(Models.TbEmailRecebido req){
+
+            Models.Response.EmailsRecebidosResponse res = 
+            new Models.Response.EmailsRecebidosResponse();
+
+            res.IdEmailRecebido = req.IdEmailRecebido;
+            res.Titulo = req.NmTitulo;
+            res.Lido = req.BlLido;
+            res.Remetente = req.DsEmailRemetente;
+            res.HorarioEnvio = req.DtEnvio;
+            res.DConteudo = req.DsConteudo;
+
+            return res;
+        }
     }
 }

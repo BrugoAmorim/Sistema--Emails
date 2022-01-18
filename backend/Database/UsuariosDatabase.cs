@@ -35,5 +35,11 @@ namespace backend.Database
             Models.TbUsuario conta = users.FirstOrDefault(x => x.DsEmail == req.Email);
             return conta;
         }
+        
+        public Models.TbUsuario procuraruser(int iduser){
+
+            Models.TbUsuario conta = db.TbUsuarios.FirstOrDefault(x => x.IdUsuario == iduser);
+            return conta;
+        }
     }
 }

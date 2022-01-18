@@ -18,5 +18,6 @@ namespace backend.Models
         public DateTime DtEnvio { get; set; }
 
         public virtual ICollection<TbEmailUsuario> TbEmailUsuarios { get; set; }
+
     }
 }

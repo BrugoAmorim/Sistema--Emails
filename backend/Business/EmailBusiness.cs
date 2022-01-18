@@ -37,5 +37,26 @@ namespace backend.Business
 
             return naolidos;
         }
+
+        public Models.TbEmailRecebido leremail(int idmail, int valor)
+        {
+            Models.TbEmailRecebido correspondencia = banco.procurarmail(idmail);
+            bool lido;
+
+            if(valor != 1 && valor != 0)
+                throw new ArgumentException("Não foi possível marcar como lido");
+
+            if(correspondencia == null)
+                throw new ArgumentException("Este email não foi encontrado");
+
+            if(valor == 1)
+                lido = true;
+            else
+                lido = false;
+
+            Models.TbEmailRecebido marcacao = banco.emaillido(idmail,lido);
+            return marcacao;
+
+        }
     }
 }
