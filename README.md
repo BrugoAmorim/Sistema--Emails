@@ -23,6 +23,10 @@ a mesma consistência de layout e por que assim fica mais fácil definir um padr
   Depois do usuário ter entrado no sistema ele será redirecionada para a segunda home do site
   ![meus-emails](https://user-images.githubusercontent.com/87936511/150408027-1d770ee5-01af-4c9f-8c6b-70650ff7aeba.jpg)
   
+  ### Ler Email:
+  O usuário depois de clicar no email desejado será redirecionado para está tela, aonde terá o conteudo do email
+  ![ler-email](https://user-images.githubusercontent.com/87936511/150563467-4147adc5-65e1-4e9c-8766-74e494b1f312.png)
+ 
 ## Protótipo
 
 ![image](https://user-images.githubusercontent.com/87936511/149671889-caa2add8-eac3-4863-9e4b-3ca22ff71640.png)
