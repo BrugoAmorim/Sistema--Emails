@@ -135,7 +135,6 @@ body{
     height: 80%;
     width: 100%;
     background-color: white;
-    border-radius: 8px;
     overflow-y: auto;
     display: block;
 }
@@ -159,7 +158,6 @@ body{
     margin: 1%;
     flex-direction: column;
     display: flex;
-    border-radius: 12px;
     padding: 2%;
 }
 
