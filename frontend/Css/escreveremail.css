@@ -1,0 +1,192 @@
+body{
+    height: 100vh;
+    margin: 0px;
+}
+
+.container{
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    background-color: rgb(220, 226, 248);
+}
+
+.rodape{
+    height: 15%;
+    border-bottom: 2px solid black;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    background-color: white;
+}
+
+.conteudosite{
+    height: 84%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.nomesite{
+    height: 25%;
+    width: auto;
+    padding: 1%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.pagina{
+    height: 25%;
+    border-left: 2px solid black;
+    width: auto;
+    padding: 1%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.conteudo{
+    height: 75%;
+    width: 50%;
+    box-shadow: 2px 5px 7px 0px;
+    background-color: whitesmoke;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.instancias{
+    height: 80%;
+    width: 35%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.informacoes{
+    height: 90%;
+    width: 50%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.botoes{
+    height: 70%;
+    width: 80%;
+    flex-direction: column;
+    display: flex;
+}
+
+.telaatual{
+    background-color: royalblue;
+    height: 25%;
+    margin: 1%;
+    border: none;
+    border-radius: 0px 24px 24px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 100%;
+    cursor: pointer;
+}
+
+.outrastelas{
+    height: 25%;
+    margin: 1%;
+    border: none;
+    border-radius: 0px 24px 24px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    cursor: pointer;
+    background-color: white;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    color: black;
+    justify-content: center;
+}
+
+.outrastelas:hover{
+    background-color: royalblue;
+    transition: 0.2s;
+    color: white;
+}
+
+.telaatual:hover{
+    background-color: rgb(25, 74, 221);
+    transition: 0.2s;
+}
+
+.tituloemail{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tituloemail input{
+    width: auto;
+    margin: 1%;
+    border: none;
+    border-bottom:2px solid black;
+    outline: none;
+    background-color: transparent;
+}
+
+.tituloemail input:hover{
+    border-bottom: 2px solid royalblue;
+    transition: 0.2s;
+}
+
+.conteudoemail{
+    width: 100%;
+    height: 60%;
+    display: flex;
+}
+
+.conteudoemail textarea{
+    height: auto;
+    width: 100%;
+    margin: 1%;
+    outline: none;
+    background-color: whitesmoke;
+    border:none;
+}
+
+.acaoemail{
+    height: 15%;
+    width: 100%;
+    margin: 1%;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+}
+
+.botaoenviar{
+    height: 90%;
+    margin: 1%;
+    width: auto;
+    align-items: center;
+    display: flex;
+}
+
+.envio{
+    height: 90%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    border: none;
+    border: 2px solid #228B22;
+    background-color: transparent;
+    border-radius: 4px;
+    color: #228B22;
+    cursor: pointer;
+}
+
+.envio:hover{
+    background-color: 	#228B22;
+    transition: 0.2s;
+    color: white;
+}
