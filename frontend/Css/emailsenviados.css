@@ -1,0 +1,172 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(220, 226, 248);
+}
+
+.logotipo{
+    height: 15%;
+    border-bottom: 2px solid black;
+    background-color: white;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+}
+
+.conteudopagina{
+    height: 84%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.nomesite{
+    height: 25%;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 1%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.pagina{
+    height: 25%;
+    width: auto;
+    border-left: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 1%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.conteudoemail{
+    height: 75%;
+    width: 50%;
+    box-shadow: 2px 5px 7px 0px;
+    background-color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.instancias{
+    height: 80%;
+    width: 35%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.listaemails{
+    height: 80%;
+    width: 50%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.botoes{
+    height: 70%;
+    width: 80%;
+    flex-direction: column;
+    display: flex;
+}
+
+.eventos{
+    height: 25%;
+    background-color: white;
+    border: none;
+    margin: 1%;
+    border-radius: 0px 24px 24px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    display: flex;
+}
+
+.eventos:hover{
+    background-color: royalblue;
+    transition: 0.2s;
+    color: white;
+}
+
+.eventoprimario{
+    height: 25%;
+    background-color: royalblue;
+    border: none;
+    margin: 1%;
+    border-radius: 0px 24px 24px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    cursor: pointer;
+    color: white;
+}
+
+.eventoprimario:hover{
+    background-color: rgb(25, 74, 221);
+    transition: 0.2s;
+}
+
+.titulopage{
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.sendmails{
+    height: 80%;
+    width: 100%;
+    background-color: white;
+    overflow-y: auto;
+    display: block;
+}
+
+.titulopage h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.tabela{    
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+
+.segundocorpo{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: white;
+}
+
+.segundocorpo tr{
+    height: auto;
+    margin: 1%;
+    flex-direction: column;
+    display: flex;
+    padding: 2%;
+}
+
+.segundocorpo tr:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 1px 1px 4px 0px;
+}
