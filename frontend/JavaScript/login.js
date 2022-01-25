@@ -2,7 +2,7 @@ let setEmail = document.getElementById("inserirEmail");
 let setSenha = document.getElementById("inserirSenha");
 let ConfirmarLogin = document.getElementById("Confirmar");
 
-let vl;
+import { setCookie, getCookie } from './cookie.js'
 
 ConfirmarLogin.onclick = async function(){
     
@@ -10,7 +10,6 @@ ConfirmarLogin.onclick = async function(){
         "Email":setEmail.value,
         "Senha": setSenha.value
     };
-
     let url = "http://localhost:5000/Usuarios/login";
 
     const api = await fetch(url, {
@@ -23,17 +22,19 @@ ConfirmarLogin.onclick = async function(){
         body: JSON.stringify(objeto)
     });
 
-    let pegavl;
-
     let res = api.json();
-    res.then(res =>{
-        pegavl = res.idUsuario;
-        console.log(res.email);
-        vl = pegavl;
-        console.log(vl);
-    })
 
-    window.location.href = "../Html/criarconta.html";
+    res.then(res => {
+
+        if(res.codigo == 400){
+            alert(res.motivo);
+        }
+        else{
+            setCookie("idusuario", res.idUsuario);
+            setCookie("email", res.email);
+        
+            window.location.href ="../Html/home.html";
+        }
+    })
 }
 
-export { vl }
