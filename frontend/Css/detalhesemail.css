@@ -1,0 +1,147 @@
+body{
+    height: 100vh;
+    margin: 0px;
+}
+
+.container{
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    background-color: rgb(220, 226, 248);
+}
+
+.logotipo{
+    height: 15%;
+    background-color: white;
+    border-bottom: 2px solid black;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+}
+
+.conteudopagina{
+    height: 84%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.nomesite{
+    height: 25%;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 1%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.pagina{
+    border-left: 2px solid black;
+    height: 25%;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 1%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.blocoinformacoes{
+    height: 75%;
+    width: 50%;
+    box-shadow: 2px 5px 7px 0px;
+    background-color: whitesmoke;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detalhesemail{
+    height: 80%;
+    width: 50%;
+    flex-direction: column;
+    display: flex;
+}
+
+.containerbotoes{
+    height: 80%;
+    width: 35%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.instancias{
+    height: 70%;
+    width: 80%;
+    flex-direction: column;
+    display: flex;
+}
+
+.eventos{
+    height: 25%;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    margin: 1%;
+    border-radius: 0px 24px 24px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    color: black;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.eventos:hover{
+    background-color: royalblue;
+    transition: 0.2s;
+    color: white;   
+}
+
+.tituloemail{
+    height: 10%;
+    text-align: center;    
+    display: block;
+    overflow-y: auto;
+}
+
+.detalhes{
+    height: auto;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+.detalhes div{
+    margin: 1%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.texto{
+    height: 70%;
+    display: flex;
+}
+
+.nomeemail{
+    justify-content: center;
+    display: block;
+    height: 100%;
+    width: auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+.textarea{
+    height: 100%;
+    width: 100%;
+    display: block;
+    overflow-y: auto;
+    background-color: white;
+    margin: 1%;
+    padding: 1%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
