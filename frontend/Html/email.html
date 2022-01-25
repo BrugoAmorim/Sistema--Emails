@@ -22,18 +22,21 @@
             <div class="menu">
                 <div class="bloco">
                     <div class="botoes">
-                        <a href="./home.html">Emails</a>
-                        <a href="./emailsenviados.html">Enviados</a>
-                        <a href="./escreveremail.html">Escrever Email</a>
-                        <a href="./index.html">Sair</a>
+                        <a href="./home.html" id="apagaddtemporarios">Emails</a>
+                        <a href="./emailsenviados.html" id="apagaddtemporarios">Enviados</a>
+                        <a href="./escreveremail.html" id="apagaddtemporarios">Escrever Email</a>
+                        <a href="./index.html" id="apagaddtemporarios">Sair</a>
                     </div>
                 </div>
                 <div class="detalhesemail">
                     <div class="blocotitulo">
-                        <strong class="tituloemail">Titulo de teste</strong>
+                        <strong class="tituloemail" id="tituloemail">
+                            <!-- aqui fica o titulo -->
+                        </strong>
                         <div class="marcarlido">
                             <div class="check">
-                                <input type="checkbox">
+                                <!-- tag abaixo mostra se foi lido -->
+                                <input type="checkbox" id="marcacao">
                             </div>
                             <div class="label">
                                 <label for="">Marcar Lido</label>
@@ -42,13 +45,13 @@
                     </div>
                     <div class="emailremetente">
                         <div class="remetente">
-                            <div class="contato">
-                                <ins>Remetente@gmail.com</ins>
+                            <div class="contato" id="ctt">
+                                <!-- tag <ins> junto ao email do remetente -->    
                             </div>
                         </div>
                         <div class="texto">
-                            <div style="margin: 1%;">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam reprehenderit deleniti modi voluptates. Magnam nam deserunt ab dolor quod, voluptate eum, vel autem nulla, et cumque similique vitae unde tempore!
+                            <div style="margin: 1%;" id="conteudo">
+                                <!-- local aonde fica o texto enviado -->>
                             </div>
                         </div>
                     </div>
@@ -62,5 +65,6 @@
             </div>
         </div>
     </div>
+    <script src="../JavaScript/email.js"></script>
 </body>
 </html>

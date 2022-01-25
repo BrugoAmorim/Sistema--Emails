@@ -1,5 +1,4 @@
 
-
 import { setCookie, getCookie } from './cookie.js'
 
 let nvemail = document.getElementById("novoEmail");
