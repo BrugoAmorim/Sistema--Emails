@@ -11,11 +11,11 @@ a mesma consistência de layout e por que assim fica mais fácil definir um padr
 
 ## Telas Concluídas (Html e Css)
   
-  ### Login:
+  ### Login(chamada a api com js feita):
   O primeiro lugar aonde o usuario é levado, é necessário ele ter um registro ja cadastrado, caso contrario ele deva ir criar uma nova conta
   ![tela-inicial](https://user-images.githubusercontent.com/87936511/150407401-09e9ebe6-cdfd-47b3-ad8c-4487f250d30d.jpg)
   
-  ### Criar Conta:
+  ### Criar Conta(chamada a api com js feita):
   Se o usuário não tiver uma conta registrada ele pode criar uma aqui
   ![criar-conta](https://user-images.githubusercontent.com/87936511/150407676-80d8cfd3-ce14-404b-97b1-656c259bbe78.png)
 
@@ -39,4 +39,6 @@ Informações Adicionais
   
 - Utilizando HTML5 e CSS3 para desenvolver o front-end
   
-- Utilizarei a linguagem Js no front-end
+- Utilizando a linguagem Js no front-end
+  
+- Utilizando método fetch no Js para acessar a API
