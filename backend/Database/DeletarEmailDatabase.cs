@@ -10,20 +10,18 @@ namespace backend.Database
         Models.dbemailsContext db = new Models.dbemailsContext();
         public void deletar(int id)
         {
-            Models.TbEmailUsuario email = db.TbEmailUsuarios.First(x => x.IdEmailUsuario == id);
-            int idemail = email.IdEmailRecebido;
-
+            Models.TbEmailUsuario email = db.TbEmailUsuarios.First(x => x.IdEmailRecebido == id);
             db.TbEmailUsuarios.Remove(email);
             db.SaveChanges();
 
-            Models.TbEmailRecebido naolidos = db.TbEmailRecebidos.First(x => x.IdEmailRecebido == idemail);
+            Models.TbEmailRecebido naolidos = db.TbEmailRecebidos.First(x => x.IdEmailRecebido == id);
             db.TbEmailRecebidos.Remove(naolidos);
             db.SaveChanges();
         }
 
         public Models.TbEmailUsuario procurarparApagar(int id){
 
-            Models.TbEmailUsuario procurando = db.TbEmailUsuarios.FirstOrDefault(x => x.IdEmailUsuario == id);
+            Models.TbEmailUsuario procurando = db.TbEmailUsuarios.FirstOrDefault(x => x.IdEmailRecebido == id);
             return procurando;
         }
     }
