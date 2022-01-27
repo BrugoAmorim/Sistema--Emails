@@ -2,6 +2,7 @@
 import { getCookie } from './cookie.js'
 
 let tbody = document.getElementById("campoinfo");
+let load = document.getElementById("recarregar");
 
 window.onload = async function(){
 
@@ -45,4 +46,8 @@ window.onload = async function(){
         }
     })
 
+}
+
+load.onclick = function(){
+    window.location.reload();
 }

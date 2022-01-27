@@ -2,6 +2,7 @@
 import { getCookie } from './cookie.js'
 
 let tbody = document.getElementById("campoinformacoes");
+let load = document.getElementById("recarregar");
 
 let objeto;
 window.onload = async function(){
@@ -55,4 +56,8 @@ function GerarElemento(objeto){
                 window.location.href = "./email.html";
             }));
         }
+}
+
+load.onclick = function(){
+    window.location.reload()
 }

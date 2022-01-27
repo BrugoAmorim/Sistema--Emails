@@ -24,27 +24,28 @@
                     <div class="botoes">
                         <a class="outrastelas" href="./home.html">Emails</a>
                         <a href="./emailsenviados.html" class="outrastelas">Enviados</a>
-                        <button class="telaatual">Escrever Email</button>
+                        <button class="telaatual" id="recarregar">Escrever Email</button>
                         <a class="outrastelas" href="./index.html">Sair</a>
                     </div>
                 </div>
                 <div class="informacoes">
                     <div class="tituloemail">
-                        <input type="text" placeholder="Titulo do Email" required>
-                        <input type="text" placeholder="De:" required>
-                        <input type="text" placeholder="Para:" required>
+                        <input type="text" placeholder="Titulo do Email" id="titulo" required>
+                        <input type="text" placeholder="De:" id="emailDe" required readonly>
+                        <input type="text" placeholder="Para:" id="emailPara" required>
                     </div>
                     <div class="conteudoemail">
-                        <textarea placeholder="Escreva Aqui" name="conteudo para o email" id="" cols="30" rows="10" maxlength="400"></textarea>
+                        <textarea placeholder="Escreva Aqui" name="conteudo para o email" id="ctEmail" cols="30" rows="10" maxlength="400"></textarea>
                     </div>
                     <div class="acaoemail">
                         <div class="botaoenviar">
-                            <button class="envio">Enviar</button>
+                            <button class="envio" id="Enviar">Enviar</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="../JavaScript/escrever.js" type="module"></script>
 </body>
 </html>
